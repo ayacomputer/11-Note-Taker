@@ -39,7 +39,7 @@ body {
 
 .note-textarea,
 .note-title {
-  color: var(--lightColor);
+  color: var(--darkColor);
   width: 100%;
   outline: none;
   border: none;

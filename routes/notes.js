@@ -13,11 +13,11 @@ notes.get('/', (req, res) => {
 });
 
 notes.get('/:id', (req, res) => {
-    const noteId = req.params.note_id;
+    const noteId = req.params.id;
     readFromFile('./db/db.json')
         .then((data) => JSON.parse(data))
         .then((json) => {
-            const result = json.filter((note) => notes.note_id === noteId);
+            const result = json.filter((note) => notes.id === noteId);
             return result.length > 0
                 ? res.json(result)
                 : res.json('No note with that ID');
@@ -25,11 +25,11 @@ notes.get('/:id', (req, res) => {
 });
 
 notes.delete('/:id', (req, res) => {
-    const noteId = req.params.note_id;
+    const noteId = req.params.id;
     readFromFile('./db/db.json')
         .then((data) => JSON.parse(data))
         .then((json) => {
-            const result = json.filter((note) => notes.note_id !== noteId);
+            const result = json.filter((note) => notes.id !== noteId);
             writeToFile('./db/db.json', result);
             res.json(`Item ${noteId} has been deleted 🗑️`);
         });
@@ -38,13 +38,13 @@ notes.delete('/:id', (req, res) => {
 notes.post('/', (req, res) => {
     console.log(req.body);
 
-    const { title, text, note_id } = req.body;
+    const { title, text } = req.body;
 
     if (req.body) {
         const newNote = {
             title,
             text,
-            note_id: uuidv4(),
+            id: uuidv4(),
         };
 
         readAndAppend(newNote, './db/db.json');
