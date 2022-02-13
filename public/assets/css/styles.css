@@ -20,11 +20,12 @@
 html,
 body {
   font-family: Nunito, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--darkColor);
+  /* background-color: var(--darkColor); */
   height: 100%;
   margin: 0;
   padding: 0;
 }
+
 
 .save-note {
   display: none;
@@ -45,6 +46,9 @@ body {
   border: none;
 }
 
+.navbar {
+  color: var(--secondColor);
+}
 .note-textarea {
   resize: none;
   height: calc(100% - 63px);
