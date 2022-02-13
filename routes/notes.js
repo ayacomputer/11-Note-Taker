@@ -12,7 +12,7 @@ notes.get('/', (req, res) => {
     readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
 });
 
-notes.get('/:note_id', (req, res) => {
+notes.get('/api/:note_id', (req, res) => {
     const noteId = req.params.note_id;
     readFromFile('./db/db.json')
         .then((data) => JSON.parse(data))
@@ -38,12 +38,12 @@ notes.delete('/:note_id', (req, res) => {
 notes.post('/', (req, res) => {
     console.log(req.body);
 
-    const { title, note } = req.body;
+    const { title, text, note_id } = req.body;
 
     if (req.body) {
         const newNote = {
             title,
-            note,
+            text,
             note_id: uuidv4(),
         };
 
