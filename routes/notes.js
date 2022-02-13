@@ -29,7 +29,7 @@ notes.delete('/:id', (req, res) => {
     readFromFile('./db/db.json')
         .then((data) => JSON.parse(data))
         .then((json) => {
-            const result = json.filter((note) => notes.id !== noteId);
+            const result = json.filter((note) => note.id !== noteId);
             writeToFile('./db/db.json', result);
             res.json(`Item ${noteId} has been deleted 🗑️`);
         });
