@@ -56,8 +56,9 @@
 
  ## Built With
 *  [Node.js](https://nodejs.org/) 
-* Express.js 
-* JSON to store notes 
+*  [express npm package](https://expressjs.com/) 
+*  [uuid npm package](https://www.npmjs.com/package/uuid)  
+*  JSON to store notes 
 <p align = "right"> (<a href="#top">back to top</a>)</>
 
 ## Usage
@@ -75,9 +76,10 @@ To get a local copy up and running follow these simple example steps.
  ## Installation
 
  The application will be invoked by using the following command:
-
-
+ Clone the repo
  `git clone git@github.com:ayacomputer/11-Note-Taker.git`
+ Run this code
+ `npm start`
 
 <p align="right">(<a href="#top">back to top</a>)</>
 

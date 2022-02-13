@@ -101,3 +101,12 @@ body {
   padding: 20px;
   cursor: pointer;
 }
+
+#contact, #mycontact {
+ font-size:0.7rem;
+ text-decoration: none;
+}
+
+.footer {
+  padding: 3rem;
+}
