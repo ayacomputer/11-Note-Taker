@@ -9,12 +9,12 @@ const {
 
 
 notes.get('/', (req, res) => {
-    readFromFile('./db/notes.json').then((data) => res.json(JSON.parse(data)));
+    readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
 });
 
 notes.get('/:note_id', (req, res) => {
     const noteId = req.params.note_id;
-    readFromFile('./db/notes.json')
+    readFromFile('./db/db.json')
         .then((data) => JSON.parse(data))
         .then((json) => {
             const result = json.filter((note) => notes.note_id === noteId);
@@ -26,11 +26,11 @@ notes.get('/:note_id', (req, res) => {
 
 notes.delete('/:note_id', (req, res) => {
     const noteId = req.params.note_id;
-    readFromFile('./db/notes.json')
+    readFromFile('./db/db.json')
         .then((data) => JSON.parse(data))
         .then((json) => {
             const result = json.filter((note) => notes.note_id !== noteId);
-            writeToFile('./db/notes.json', result);
+            writeToFile('./db/db.json', result);
             res.json(`Item ${noteId} has been deleted 🗑️`);
         });
 });
@@ -47,7 +47,7 @@ notes.post('/', (req, res) => {
             note_id: uuidv4(),
         };
 
-        readAndAppend(newNote, './db/notes.json');
+        readAndAppend(newNote, './db/db.json');
         res.json(`Note added successfully 🚀`);
     } else {
         res.error('Error in adding note');
