@@ -12,7 +12,7 @@ notes.get('/', (req, res) => {
     readFromFile('./db/notes.json').then((data) => res.json(JSON.parse(data)));
 });
 
-tips.get('/:note_id', (req, res) => {
+notes.get('/:note_id', (req, res) => {
     const noteId = req.params.note_id;
     readFromFile('./db/notes.json')
         .then((data) => JSON.parse(data))
