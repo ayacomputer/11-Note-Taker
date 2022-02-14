@@ -63,9 +63,10 @@
 
 ## Usage
 
-  Following image shows this application's functionality(questions).
+  Following image shows this application's functionality.
+  You can add the notes and text, save it and delete it.
  ![This is an image of the product.](./public//assets/product.png)
- 
+
  Heroku Link: [Click Here](https://arcane-citadel-56010.herokuapp.com/)
 
 <p align ="right">(<a href="#top">back to top</a>)</>
