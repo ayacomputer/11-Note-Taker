@@ -47,7 +47,7 @@
  ## About The Project
 
 
- ![ProductScreen Shot](./assets/product.gif)
+ ![ProductScreen Shot](./public//assets/product2.png)
 
 
  This is an application that can be used to write and save notes. This application uses an Express.js back end and will save and retrieve note data from a JSON file. The users can organize their thoughts and keep track of tasks I need to complete.
@@ -64,8 +64,9 @@
 ## Usage
 
   Following image shows this application's functionality(questions).
-
- ![This is an image of the product.](./assets/product.png)
+ ![This is an image of the product.](./public//assets/product.png)
+ 
+ Heroku Link: [Click Here](https://arcane-citadel-56010.herokuapp.com/)
 
 <p align ="right">(<a href="#top">back to top</a>)</>
 
@@ -101,7 +102,6 @@ See LICENSE.txt for more information.
 
 Ayako Woollan - ayako.woollan@gmail.com
 
-Heroku Link: [Click Here](https://arcane-citadel-56010.herokuapp.com/)
 
 GitHub Project Link: [https://github.com/ayacomputer/11-Note-Taker](https://github.com/ayacomputer/11-Note-Taker)
 
