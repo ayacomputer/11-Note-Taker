@@ -101,6 +101,8 @@ See LICENSE.txt for more information.
 
 Ayako Woollan - ayako.woollan@gmail.com
 
-Project Link: [https://github.com/ayacomputer/11-Note-Taker](https://github.com/ayacomputer/11-Note-Taker)
+Heroku Link: [Click Here](https://arcane-citadel-56010.herokuapp.com/)
+
+GitHub Project Link: [https://github.com/ayacomputer/11-Note-Taker](https://github.com/ayacomputer/11-Note-Taker)
 
 <p align="right">(<a href="#top">back to top</a>)</>

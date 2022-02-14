@@ -46,7 +46,7 @@ body {
 }
 
 .navbar {
-  color: var(--secondColor);
+  color: var(--primeColor);
 }
 .note-textarea {
   resize: none;
@@ -62,7 +62,7 @@ body {
 
 .note-title:read-only,
 .note-textarea:read-only {
-  color: var(--secondColor);
+  color: var(--primeColor);
 }
 
 .list-container .card {
