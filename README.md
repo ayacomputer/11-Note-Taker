@@ -3,7 +3,7 @@
 
 ---
   
-# Note Taker
+# Minimalist Note Taker
 <details>
   
 <summary>Table of Contents</summary>
@@ -50,7 +50,7 @@
  ![ProductScreen Shot](./assets/product.gif)
 
 
- This is an application  that can be used to write and save notes. This application uses an Express.js back end and will save and retrieve note data from a JSON file. The users can organize their thoughts and keep track of tasks I need to complete.
+ This is an application that can be used to write and save notes. This application uses an Express.js back end and will save and retrieve note data from a JSON file. The users can organize their thoughts and keep track of tasks I need to complete.
 
 <p align = "right">(<a href="#top">back to top</a>)</>
 
@@ -77,9 +77,13 @@ To get a local copy up and running follow these simple example steps.
 
  The application will be invoked by using the following command:
  Clone the repo
- `git clone git@github.com:ayacomputer/11-Note-Taker.git`
+```
+git clone git@github.com:ayacomputer/11-Note-Taker.git`
+```
  Run this code
- `npm start`
+ ```
+ npm start
+ ```
 
 <p align="right">(<a href="#top">back to top</a>)</>
 
