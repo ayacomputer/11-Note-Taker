@@ -77,8 +77,7 @@ To get a local copy up and running follow these simple example steps.
 
  ## Installation
 
- The application will be invoked by using the following command:
- Clone the repo
+Clone the repo
 ```
 git clone git@github.com:ayacomputer/11-Note-Taker.git`
 ```
