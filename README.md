@@ -50,7 +50,7 @@
  ![ProductScreen Shot](./public//assets/product2.png)
 
 
- This is an application that can be used to write and save notes. This application uses an Express.js back end and will save and retrieve note data from a JSON file. The users can organize their thoughts and keep track of tasks I need to complete.
+ This is an application that can be used to write and save notes. This application uses an Express.js back end and will save and retrieve note data from a JSON file. The users can organize their thoughts and keep track of tasks they need to complete.
 
 <p align = "right">(<a href="#top">back to top</a>)</>
 
